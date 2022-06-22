@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./cookie.js"></script>
+  <script>
+    console.log(cookie.get('test2'));
+    cookie.set('age', '22').set('phone', '13688888888', 3, '/2206/day23');
+
+    cookie.remove('phone', '/2206/day23');
+
+    const info = {
+      username: 'zhangsan',
+      age: 18,
+      sex: 'nan'
+    }
+
+    // cookie.set('info', info); // '[object Object]'
+    cookie.set('info', JSON.stringify(info)); 
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

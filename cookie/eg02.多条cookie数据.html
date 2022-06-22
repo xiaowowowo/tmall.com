@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function () {
+      let set = document.getElementById('setcookie');
+      let get = document.getElementById('getcookie');
+
+      set.onclick = function () {
+        // 设置多个cookie 只需要多次赋值
+        // cookie的key是唯一的 如果key已经存在 则表示要替换value
+        document.cookie = 'username=lisi';
+        document.cookie = 'age=18';
+        document.cookie = 'sex=nan';
+        document.cookie = 'address=shanghai'
+      }
+     
+      get.onclick = function () {
+        // 一次性可以拿到所有cookie
+        // 多条cookie的字符串 使用 '; ' 分隔
+        // console.log(document.cookie);
+
+        let cookies = document.cookie.split('; ');
+        // console.log(cookies);
+
+
+        cookies = cookies.reduce((obj, curr) => {
+          let item = curr.split('=');
+          obj[item[0]] = item[1];
+          return obj;
+        }, {});
+
+        console.log(cookies);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input type="button" value="set" id="setcookie">
+  <input type="button" value="get" id="getcookie">
+</body>
+
+</html>

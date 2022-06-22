@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // cookie 生存期(有效期) 默认情况下是一次会话
+    // 生存期是cookie的一个属性 expires
+
+    // 设置cookie时可以为cookie设置 expires 属性
+    // expires设置一个标准时间格式
+
+
+
+    window.onload = function () {
+      let set = document.querySelector('#set');
+      let get = document.querySelector('#get');
+
+      set.onclick = function () {
+        let d = new Date();
+        d.setDate(d.getDate() + 3);
+
+        document.cookie = `message=nihaoshijie;expires=${d}`;
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <input type="button" id="set" value="set">
+  <input type="button" id="get" value="get">
+</body>
+
+</html>

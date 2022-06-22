@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // cookie 是网站的会话跟踪技术
+    // 会话 指的是 用户打开页面到关闭浏览器的过程
+    // 默认情况下 cookie数据会在会话结束后自动销毁
+
+
+    // cookie 是 浏览器 和 服务器进行数据共享的一种技术
+
+    // 必须在服务器环境中使用
+
+    // cookie数据会随每一次的请求(http请求) 一起发送
+    // cookie信息会自动添加在请求头(request header)中
+
+    // 浏览器端使用cookie
+    // document.cookie
+
+    // cookie保存的数据是  字符串类型
+    // 它保存 键值对数据
+    // 语法: document.cookie = 'key=value';
+
+    // document.cookie = 'username=zhangsan';
+
+    let [key, value] = document.cookie.split('=');
+    console.log(key, value);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

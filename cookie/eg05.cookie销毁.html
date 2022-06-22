@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // cookie销毁
+    // 1. 当设置的cookie数据到达生存期会自动销毁
+    // 2. 将设置的 value 值 修改成 空字符串
+
+    // 设置一个已过期的时间 或者 session(-1)
+    // 在设置值为空字符串
+
+    document.cookie = 'message="";expires=-1';
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

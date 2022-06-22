@@ -1,0 +1,306 @@
+#top p {
+  margin: 0;
+}
+#top #wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  height: 88px;
+  box-sizing: border-box;
+}
+#top #wrapper a {
+  cursor: pointer;
+}
+#top #wrapper img {
+  width: 72px;
+  height: 45px;
+}
+#top #wrapper .right a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+#top #wrapper .right a:hover {
+  color: red;
+}
+#center {
+  background: url(../../img/reg-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+#center #wrapper {
+  position: relative;
+}
+#center #wrapper > a {
+  position: absolute;
+  width: 630px;
+  height: 440px;
+  left: 80px;
+  top: 80px;
+  cursor: pointer;
+}
+#center #wrapper .login {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  width: 350px;
+}
+#center #wrapper .login a {
+  text-decoration: none;
+}
+#center #wrapper .login > div {
+  width: 350px;
+  min-height: 350px;
+  padding: 25px 25px 23px 25px;
+  color: #6c6c6c;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+#center #wrapper .login .login-1 ul {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 4px;
+}
+#center #wrapper .login .login-1 ul li {
+  height: 18px;
+  line-height: 5px;
+  font-size: 16px;
+  margin: 9px 10px 0 0;
+  font-weight: 700;
+}
+#center #wrapper .login .login-1 ul li a {
+  color: #3c3c3c;
+}
+#center #wrapper .login .login-1 ul li.active {
+  border-bottom: 2px solid #3c3c3c;
+}
+#center #wrapper .login .login-1 .pass-login,
+#center #wrapper .login .login-1 .note-login {
+  display: none;
+}
+#center #wrapper .login .login-1 .pass-login .num,
+#center #wrapper .login .login-1 .note-login .num,
+#center #wrapper .login .login-1 .pass-login .pass,
+#center #wrapper .login .login-1 .note-login .pass {
+  width: 300px;
+  height: 42px;
+  border: 1px solid #ccc;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: white;
+}
+#center #wrapper .login .login-1 .pass-login .num .icon,
+#center #wrapper .login .login-1 .note-login .num .icon,
+#center #wrapper .login .login-1 .pass-login .pass .icon,
+#center #wrapper .login .login-1 .note-login .pass .icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 18px;
+}
+#center #wrapper .login .login-1 .pass-login .num .input,
+#center #wrapper .login .login-1 .note-login .num .input,
+#center #wrapper .login .login-1 .pass-login .pass .input,
+#center #wrapper .login .login-1 .note-login .pass .input {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+#center #wrapper .login .login-1 .pass-login .num .input input,
+#center #wrapper .login .login-1 .note-login .num .input input,
+#center #wrapper .login .login-1 .pass-login .pass .input input,
+#center #wrapper .login .login-1 .note-login .pass .input input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+#center #wrapper .login .login-1 .pass-login > button,
+#center #wrapper .login .login-1 .note-login > button {
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #f40;
+  border-color: #f40;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+#center #wrapper .login .login-1 .pass-login .other,
+#center #wrapper .login .login-1 .note-login .other {
+  margin-bottom: 20px;
+}
+#center #wrapper .login .login-1 .pass-login .other > a,
+#center #wrapper .login .login-1 .note-login .other > a {
+  color: #6c6c6c;
+  font-size: 12px;
+  margin-left: 5px;
+}
+#center #wrapper .login .login-1 .pass-login .other > a .glyphicon-eye-open,
+#center #wrapper .login .login-1 .note-login .other > a .glyphicon-eye-open {
+  color: red;
+}
+#center #wrapper .login .login-1 .pass-login .other > a .glyphicon-modal-window,
+#center #wrapper .login .login-1 .note-login .other > a .glyphicon-modal-window {
+  color: #4343b9;
+}
+#center #wrapper .login .login-1 .pass-login .forget,
+#center #wrapper .login .login-1 .note-login .forget {
+  text-align: right;
+}
+#center #wrapper .login .login-1 .pass-login .forget span a,
+#center #wrapper .login .login-1 .note-login .forget span a {
+  color: #6c6c6c;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 10px;
+}
+#center #wrapper .login .login-1 .note-login .num select {
+  border: none;
+  width: 80px;
+  font-size: 10px;
+}
+#center #wrapper .login .login-1 .note-login .num .input {
+  width: 170px;
+  padding-left: 0;
+}
+#center #wrapper .login .login-1 .note-login .pass .input {
+  position: relative;
+}
+#center #wrapper .login .login-1 .note-login .pass .input button {
+  height: 38px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  font-size: 14px;
+}
+#center #wrapper .login .login-1 .display {
+  display: block;
+}
+#center #wrapper .login .login-2 {
+  background-color: white;
+  display: none;
+}
+#center #wrapper .login .login-2 .box-1 {
+  margin-bottom: 40px;
+}
+#center #wrapper .login .login-2 .box-1 p {
+  height: 18px;
+  line-height: 5px;
+  font-size: 16px;
+  margin: 9px 10px 0 0;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+#center #wrapper .login .login-2 .box-2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#center #wrapper .login .login-2 .box-2 img {
+  box-shadow: 5px 5px 3px #5f5e5e;
+}
+#center #wrapper .login .login-2 .box-3 {
+  display: flex;
+  justify-content: center;
+}
+#center #wrapper .login .login-2 .box-3 .glyphicon {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #f40;
+  margin-right: 5px;
+}
+#center #wrapper .login .login-2 .box-3 .box-3-1 {
+  font-size: 12px;
+}
+#center #wrapper .login .login-2 .box-3 .box-3-1 a {
+  color: #5f5e5e;
+}
+#center #wrapper .login .login-2 .box-3 .box-3-1 p {
+  margin: 0;
+}
+#center #wrapper .login .login-2 .box-4 {
+  width: 100%;
+  margin: 8px 0;
+  text-align: right;
+}
+#center #wrapper .login .login-2 .box-4 a {
+  color: #6c6c6c;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#footer {
+  padding-top: 60px;
+}
+#footer #wrapper .footer-hd {
+  color: #6c6c6c;
+}
+#footer #wrapper .footer-hd p {
+  padding: 18px 2px;
+  border-top: #ccc 1px solid;
+  border-bottom: #ccc 1px solid;
+}
+#footer #wrapper .footer-hd p a {
+  display: inline;
+  margin: 0 4px;
+  white-space: nowrap;
+  color: #6c6c6c;
+  text-decoration: none;
+}
+#footer #wrapper .footer-hd p a:hover {
+  color: red;
+}
+#footer #wrapper .footer-bd {
+  margin-bottom: 30px;
+}
+#footer #wrapper .footer-bd .p1,
+#footer #wrapper .footer-bd .p2 {
+  color: #6c6c6c;
+}
+#footer #wrapper .footer-bd .p1 em,
+#footer #wrapper .footer-bd .p2 em {
+  margin-left: 30px;
+  color: #9c9c9c;
+}
+#footer #wrapper .footer-bd .p1 span,
+#footer #wrapper .footer-bd .p2 span {
+  margin: 0 8px ;
+}
+#footer #wrapper .footer-bd .p1 span a,
+#footer #wrapper .footer-bd .p2 span a {
+  color: #6c6c6c;
+  font-size: 12px;
+  text-decoration: none;
+}
+#footer #wrapper .footer-bd .p1 span a:hover,
+#footer #wrapper .footer-bd .p2 span a:hover {
+  color: red;
+}
+#footer #wrapper .footer-bd .p3,
+#footer #wrapper .footer-bd .p4 {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+#footer #wrapper .footer-bd .p3 a,
+#footer #wrapper .footer-bd .p4 a {
+  color: #9c9c9c;
+  text-decoration: none;
+}
+#footer #wrapper .footer-bd .p3 a:hover,
+#footer #wrapper .footer-bd .p4 a:hover {
+  color: red;
+}
+#footer #wrapper .footer-ft {
+  margin-bottom: 20px;
+}

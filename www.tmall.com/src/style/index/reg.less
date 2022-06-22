@@ -1,0 +1,226 @@
+#top {
+  background: #f5f5f5;
+
+  #wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 35px;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 0 6px;
+        height: 35px;
+        line-height: 35px;
+
+        a {
+          color: #6C6C6C;
+          text-decoration: none;
+
+          &:hover {
+            color: red;
+          }
+
+          .sanjiao {
+            font-size: 5px;
+          }
+
+          &:hover .glyphicon-triangle-bottom {
+            transform: rotate(180deg);
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+//二级菜单未做
+//禁选效果、到达条件后可勾选，未做 
+//单选点击后取消不了
+//confirm 位置不对
+#main {
+  .header {
+    padding: 20px 0;
+    color: #3c3c3c;
+    width: 990px;
+    margin: 0 auto;
+
+    h1 {
+      display: inline-block;
+      margin: 0 5px;
+
+
+      img {
+        height: 43px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+  .reg-box {
+    min-height: 400px;
+    padding-top: 150px;
+
+    .data {
+      width: 470px;
+      margin: 0 auto;
+      position: relative;
+
+      >div {
+        margin-top: 20px;
+
+        span {
+          display: inline-block;
+          width: 120px;
+          height: 36px;
+          line-height: 36px;
+          text-align: right;
+          color: #111;
+          font-size: 14px;
+          margin-right: 5px;
+        }
+      }
+
+      .num {
+
+        // border: 1px solid #d6d6d6;
+        select {
+          width: 136px;
+          // padding: 0 10px;
+          height: 36px;
+          line-height: 36px;
+          border: 1px solid #d6d6d6;
+        }
+
+        input {
+          width: 202px;
+          padding: 0 10px;
+          height: 36px;
+          line-height: 36px;
+          border: 1px solid #d6d6d6;
+        }
+      }
+
+      .pass {
+        margin-bottom: 60px;
+        position: relative;
+
+        input {
+          width: 338px;
+          border: 1px solid #d6d6d6;
+          height: 36px;
+          line-height: 36px;
+          padding: 0 10px;
+        }
+
+        button {
+          border: none;
+          background-color: white;
+          color: red;
+          position: absolute;
+          top: 9px;
+          right: 10px;
+        }
+
+      }
+
+      .sub {
+        .submit {
+          width: 338px;
+          background-color: orange;
+          opacity: 0.6;
+          height: 36px;
+          line-height: 36px;
+          color: white;
+          margin-bottom: 20px;
+        }
+      }
+
+      .confirm {
+        display: flex;
+        justify-content: space-between;
+         padding-bottom: 40px;
+
+        p {
+          display: inline-block;
+          font-size: 13px;
+
+          a {
+            color: red;
+          }
+        }
+
+        input {
+          display: inline-block;
+        }
+      }
+
+      >a {
+        font-size: 13px;
+        color: red;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+#wrapper{
+  width: 990px;
+  margin: 0 auto;
+  #footer-hd {
+    padding-top: 8px;
+    border-top: #d6d6d6 1px solid;
+    border-bottom: #d6d6d6 1px solid;
+  
+    p {
+      a {
+        margin: 0 4px;
+        color: #6C6C6C;
+        text-decoration: none;
+  
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  
+  #footer-bd {
+   
+    p {
+      padding-top: 8px;
+  
+      a {
+        margin: 0 4px;
+        color: #6C6C6C;
+        text-decoration: none;
+  
+        &:hover {
+          color: red;
+        }
+  
+      }
+  
+      span {
+        color: #9c9c9c;
+        font-size: 12px;
+      }
+  
+      em {
+        color: #9c9c9c;
+        font-size: 12px;
+      }
+  
+    }
+  }
+}

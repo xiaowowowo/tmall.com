@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function () {
+      let username = document.querySelector('#username');
+      let password = document.querySelector('#password');
+      let savepwd = document.querySelector('#savepwd');
+
+      if (document.cookie) { // 有cookie的情况是 字符串 没有cookie 是空字符串
+        let cookies = document.cookie.split('; ');
+
+        cookies = cookies.reduce((obj, curr) => {
+          let item = curr.split('=');
+          obj[item[0]] = item[1];
+          return obj;
+        }, {});
+
+        username.value = cookies['username'];
+        password.value = cookies['password'];
+        savepwd.setAttribute('checked', true);
+      }
+     // 点击记住密码后的效果
+      savepwd.onclick = function () {
+        if (this.checked) {
+          document.cookie = `username=${username.value}`;
+          document.cookie = `password=${password.value}`;
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>登录</h1>
+  用户名<input type="text" name="username" id="username"><br>
+  密码<input type="text" name="password" id="password"><br>
+  记住密码<input type="checkbox" id="savepwd">
+
+</body>
+
+</html>

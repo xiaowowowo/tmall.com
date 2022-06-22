@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 设置和使用cookie 需要注意路径对数据的影响
+
+    // 在外层路径中 设置的 cookie 数据 可以在子级路径中访问
+    // 子级路径中 设置的 cookie数据 无法在父级路径中访问
+
+    // 类似于 作用域概念
+
+    // cookie的路径 是可以设置的
+    // 可以使用path属性 设置cookie的路径
+
+    document.cookie = 'username=zhangsan';
+
+    console.log(document.cookie);
+
+
+  </script>
+</head>
+
+<body>
+  <a href="./template/inner.html">inner</a>
+</body>
+
+</html>

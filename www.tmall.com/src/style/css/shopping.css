@@ -1,0 +1,455 @@
+#top {
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 12px;
+  background: #f2f2f2;
+}
+#top #wrapper {
+  display: flex;
+  padding: 0 100px;
+}
+#top a {
+  color: #999;
+  cursor: pointer;
+}
+#top a:hover {
+  color: red;
+}
+#top .glyphicon {
+  color: red;
+}
+#top #top-nav {
+  color: #999;
+  display: flex;
+  width: 990px;
+  justify-content: space-between;
+}
+#top #top-nav .top-left {
+  height: 26px;
+}
+#top #top-nav .top-left > div {
+  display: inline-block;
+  margin-right: 20px;
+}
+#top #top-nav .top-right {
+  position: relative;
+}
+#top #top-nav .top-right ul {
+  display: flex;
+  height: 26px;
+}
+#top #top-nav .top-right ul li {
+  padding: 0 10px;
+}
+#top #top-nav .top-right ul .part {
+  width: 1px;
+  height: 20px;
+  border-left: 1px #999 solid;
+  margin-top: 3px;
+}
+#top #top-nav .top-right ul .nav-my:hover {
+  background-color: white;
+}
+#top #top-nav .top-right ul .nav-col:hover {
+  background-color: white;
+}
+#top #top-nav .top-right ul .nav-shop:hover {
+  background-color: white;
+}
+#top #top-nav .top-right ul .nav-my,
+#top #top-nav .top-right ul .nav-col,
+#top #top-nav .top-right ul .nav-shop {
+  z-index: 2;
+  position: relative;
+}
+#top #top-nav .top-right ul .nav-my .glyphicon,
+#top #top-nav .top-right ul .nav-col .glyphicon,
+#top #top-nav .top-right ul .nav-shop .glyphicon {
+  color: #999;
+  font-size: 5px;
+}
+#top #top-nav .top-right ul .nav-my:hover .glyphicon,
+#top #top-nav .top-right ul .nav-col:hover .glyphicon,
+#top #top-nav .top-right ul .nav-shop:hover .glyphicon {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+#top #top-nav .top-right ul .nav-my .sec-my,
+#top #top-nav .top-right ul .nav-col .sec-my,
+#top #top-nav .top-right ul .nav-shop .sec-my,
+#top #top-nav .top-right ul .nav-my .sec-col,
+#top #top-nav .top-right ul .nav-col .sec-col,
+#top #top-nav .top-right ul .nav-shop .sec-col,
+#top #top-nav .top-right ul .nav-my .sec-shop,
+#top #top-nav .top-right ul .nav-col .sec-shop,
+#top #top-nav .top-right ul .nav-shop .sec-shop {
+  background-color: white;
+  width: 110%;
+  position: absolute;
+  left: 0px;
+  display: none;
+}
+#top #top-nav .top-right ul .nav-my .sec-shop,
+#top #top-nav .top-right ul .nav-col .sec-shop,
+#top #top-nav .top-right ul .nav-shop .sec-shop {
+  width: 155%;
+  padding: 5px 5px;
+  z-index: 1;
+}
+#top #top-nav .top-right ul .nav-my .sec-shop h6,
+#top #top-nav .top-right ul .nav-col .sec-shop h6,
+#top #top-nav .top-right ul .nav-shop .sec-shop h6 {
+  text-align: left;
+}
+#top #top-nav .top-right ul .nav-my .sec-shop .shop-bottom,
+#top #top-nav .top-right ul .nav-col .sec-shop .shop-bottom,
+#top #top-nav .top-right ul .nav-shop .sec-shop .shop-bottom {
+  text-align: left;
+}
+#top #top-nav .top-right ul .nav-my .sec-shop .port,
+#top #top-nav .top-right ul .nav-col .sec-shop .port,
+#top #top-nav .top-right ul .nav-shop .sec-shop .port {
+  width: 100%;
+  border-bottom: 1px #999 dotted;
+}
+#top #top-nav .top-right ul .nav-phone {
+  position: relative;
+}
+#top #top-nav .top-right ul .nav-phone .glyphicon {
+  color: red;
+}
+#top #top-nav .top-right ul .nav-phone .sec-phone {
+  background-color: white;
+  width: 150%;
+  position: absolute;
+  left: 0px;
+  display: none;
+}
+#top #top-nav .top-right ul .nav-my:hover .sec-my {
+  display: block;
+}
+#top #top-nav .top-right ul .nav-col:hover .sec-col {
+  display: block;
+}
+#top #top-nav .top-right ul .nav-shop:hover .sec-shop {
+  display: block;
+}
+#top #top-nav .top-right ul .nav-phone:hover .sec-phone {
+  display: block;
+}
+#search #wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 100px;
+}
+#search #wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#search #wrapper .img img {
+  width: 228px;
+  height: 40px;
+}
+#search #wrapper .city {
+  color: #e22a40;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #e5e5e5;
+  line-height: 1.5;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 100px;
+  position: relative;
+}
+#search #wrapper .city:hover .sec-nav {
+  display: block;
+}
+#search #wrapper .city > span {
+  display: inline-block;
+}
+#search #wrapper .city > span:hover {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+#search #wrapper .city .sec-nav {
+  display: flex;
+  height: 130px;
+  width: 400px;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  padding: 10px 0;
+  background-color: white;
+  display: none;
+}
+#search #wrapper .city .sec-nav .left {
+  color: #8b8b8b;
+  width: 160px;
+  padding: 16px 3px;
+}
+#search #wrapper .city .sec-nav .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+#search #wrapper .city .sec-nav .right span {
+  color: #8b8b8b;
+  display: inline-flex;
+  margin: 0 8px;
+}
+#search #wrapper .sear-box {
+  width: 390px;
+  height: 36px;
+  box-sizing: border-box;
+  border: solid #fe0137;
+  border-width: 3px 0 3px 3px;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  position: relative;
+}
+#search #wrapper .sear-box input {
+  color: #000;
+  margin: 0;
+  width: 289px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 3px 5px 5px;
+  outline: 0;
+  border: none;
+  font-size: 12px;
+}
+#search #wrapper .sear-box button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #FF0036;
+  height: 30px;
+}
+#search #wrapper .text {
+  height: 36px;
+  line-height: 36px;
+}
+#search #wrapper .text a {
+  color: #666;
+  font-size: 12px;
+}
+#search #wrapper .text a > span {
+  font-size: 16px;
+  color: #df2d44;
+}
+#main #wrapper {
+  padding: 0 100px;
+}
+#main #wrapper #shopcar .nav {
+  font-size: 12px;
+  overflow: hidden;
+  margin: 20px 0 10px 0;
+}
+#main #wrapper #shopcar .nav a:hover {
+  color: red;
+}
+#main #wrapper #shopcar .nav .left {
+  float: left;
+}
+#main #wrapper #shopcar .nav .right {
+  float: right;
+  color: gray;
+}
+#main #wrapper #shopcar .car {
+  padding: 88px 0 100px 156px;
+  background: url(../../img/shop-car-1.png) no-repeat 40px 86px;
+  font-size: 12px;
+  margin-bottom: 180px;
+}
+#main #wrapper #shopcar .car a {
+  font-size: 12px;
+}
+#main #wrapper #shopcar .car a:hover {
+  color: red;
+}
+#main #wrapper #shopcar .add {
+  margin-bottom: 50px;
+}
+#main #wrapper #shopcar .add ul {
+  display: flex;
+  margin: 0;
+}
+#main #wrapper #shopcar .add ul li {
+  border: 1px solid #999;
+  margin-left: 5px;
+  width: 121px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  background-color: #e5e2e2;
+  border-radius: 5px 5px 0 0;
+}
+#main #wrapper #shopcar .add ul .active {
+  background-color: #d20f0f;
+  color: white;
+}
+#main #wrapper #shopcar .add .box-1,
+#main #wrapper #shopcar .add .box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #96130a;
+  display: none;
+}
+#main #wrapper #shopcar .add .box-1 > div,
+#main #wrapper #shopcar .add .box-2 > div {
+  border-left: #999 1px dashed;
+  border-bottom: #999 1px dashed;
+  padding: 30px 15px;
+  height: 155px;
+  width: 197px;
+  display: flex;
+  justify-content: space-between;
+}
+#main #wrapper #shopcar .add .box-1 > div .img,
+#main #wrapper #shopcar .add .box-2 > div .img {
+  border: 1px solid #666;
+}
+#main #wrapper #shopcar .add .box-1 > div .img img,
+#main #wrapper #shopcar .add .box-2 > div .img img {
+  width: 60px;
+  height: 90px;
+}
+#main #wrapper #shopcar .add .box-1 > div .right p,
+#main #wrapper #shopcar .add .box-2 > div .right p {
+  margin-bottom: 5px;
+}
+#main #wrapper #shopcar .add .box-1 > div .right .p1,
+#main #wrapper #shopcar .add .box-2 > div .right .p1 {
+  display: inline-block;
+  font-size: 12px;
+  height: 40px;
+  width: 90px;
+  overflow: hidden;
+}
+#main #wrapper #shopcar .add .box-1 > div .right .p1 a,
+#main #wrapper #shopcar .add .box-2 > div .right .p1 a {
+  color: #575757;
+}
+#main #wrapper #shopcar .add .box-1 > div .right .p2,
+#main #wrapper #shopcar .add .box-2 > div .right .p2 {
+  font-family: arial;
+  color: #980101;
+  font-size: 12px;
+}
+#main #wrapper #shopcar .add .box-1 > div .right .p2 span,
+#main #wrapper #shopcar .add .box-2 > div .right .p2 span {
+  display: inline-block;
+  margin-right: 5px;
+}
+#main #wrapper #shopcar .add .box-1 > div .right .p3,
+#main #wrapper #shopcar .add .box-2 > div .right .p3 {
+  color: #fff;
+  border: 0 none;
+  text-align: center;
+  background-color: #96130a;
+  cursor: pointer;
+  outline: 0;
+  overflow: visible;
+  -moz-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#main #wrapper #shopcar .add .display {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+#footer #wrapper .footer-hd {
+  padding-left: 170px;
+  background-position: 0 bottom;
+  position: relative;
+  border-top: #999 1px solid;
+  display: flex;
+}
+#footer #wrapper .footer-hd > img {
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+#footer #wrapper .footer-hd > dl {
+  width: 202px;
+  padding-left: 52px;
+  font-size: 12px;
+}
+#footer #wrapper .footer-hd > dl > dt {
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #646464;
+}
+#footer #wrapper .footer-hd > dl > dt a {
+  color: #646464;
+}
+#footer #wrapper .footer-hd > dl dd a {
+  display: block;
+  width: 100px;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  color: #8b8b8b;
+}
+#footer .footer-bd {
+  border-top: 2px solid red;
+  background: #c40000;
+  color: white;
+  font-size: 12px;
+  padding-top: 10px;
+}
+#footer .footer-bd .about {
+  height: 25px;
+  line-height: 25px;
+}
+#footer .footer-bd .about a {
+  margin-right: 3px;
+  color: #fff;
+}
+#footer .footer-bd .albb {
+  padding: 5px 0;
+  line-height: 25px;
+}
+#footer .footer-bd .albb a {
+  color: #fff;
+  margin-right: 3px;
+}
+#footer .footer-bd .other {
+  color: #a4a4a4;
+  font-size: 12px;
+  line-height: 20px;
+}
+#footer .footer-bd .other a {
+  display: inline-block;
+  margin-right: 65px;
+  color: #a4a4a4;
+}
+#footer .footer-bd .other span {
+  display: inline-block;
+  margin-right: 65px;
+}
+#footer .footer-bd .other .img2 img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  vertical-align: baseline;
+}

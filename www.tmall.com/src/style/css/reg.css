@@ -1,0 +1,170 @@
+#top {
+  background: #f5f5f5;
+}
+#top #wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 35px;
+}
+#top #wrapper ul {
+  display: flex;
+}
+#top #wrapper ul li {
+  padding: 0 6px;
+  height: 35px;
+  line-height: 35px;
+}
+#top #wrapper ul li a {
+  color: #6C6C6C;
+  text-decoration: none;
+}
+#top #wrapper ul li a:hover {
+  color: red;
+}
+#top #wrapper ul li a .sanjiao {
+  font-size: 5px;
+}
+#top #wrapper ul li a:hover .glyphicon-triangle-bottom {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+#main .header {
+  padding: 20px 0;
+  color: #3c3c3c;
+  width: 990px;
+  margin: 0 auto;
+}
+#main .header h1 {
+  display: inline-block;
+  margin: 0 5px;
+}
+#main .header h1 img {
+  height: 43px;
+}
+#main .header h2 {
+  display: inline-block;
+  margin: 0 5px;
+}
+#main .reg-box {
+  min-height: 400px;
+  padding-top: 150px;
+}
+#main .reg-box .data {
+  width: 470px;
+  margin: 0 auto;
+  position: relative;
+}
+#main .reg-box .data > div {
+  margin-top: 20px;
+}
+#main .reg-box .data > div span {
+  display: inline-block;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+  color: #111;
+  font-size: 14px;
+  margin-right: 5px;
+}
+#main .reg-box .data .num select {
+  width: 136px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #d6d6d6;
+}
+#main .reg-box .data .num input {
+  width: 202px;
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #d6d6d6;
+}
+#main .reg-box .data .pass {
+  margin-bottom: 60px;
+  position: relative;
+}
+#main .reg-box .data .pass input {
+  width: 338px;
+  border: 1px solid #d6d6d6;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+}
+#main .reg-box .data .pass button {
+  border: none;
+  background-color: white;
+  color: red;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+#main .reg-box .data .sub .submit {
+  width: 338px;
+  background-color: orange;
+  opacity: 0.6;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+#main .reg-box .data .confirm {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+#main .reg-box .data .confirm p {
+  display: inline-block;
+  font-size: 13px;
+}
+#main .reg-box .data .confirm p a {
+  color: red;
+}
+#main .reg-box .data .confirm input {
+  display: inline-block;
+}
+#main .reg-box .data > a {
+  font-size: 13px;
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 0;
+}
+#wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+#wrapper #footer-hd {
+  padding-top: 8px;
+  border-top: #d6d6d6 1px solid;
+  border-bottom: #d6d6d6 1px solid;
+}
+#wrapper #footer-hd p a {
+  margin: 0 4px;
+  color: #6C6C6C;
+  text-decoration: none;
+}
+#wrapper #footer-hd p a:hover {
+  color: red;
+}
+#wrapper #footer-bd p {
+  padding-top: 8px;
+}
+#wrapper #footer-bd p a {
+  margin: 0 4px;
+  color: #6C6C6C;
+  text-decoration: none;
+}
+#wrapper #footer-bd p a:hover {
+  color: red;
+}
+#wrapper #footer-bd p span {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+#wrapper #footer-bd p em {
+  color: #9c9c9c;
+  font-size: 12px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- action 需要跳转(请求)的地址 -->
+  <!-- method 请求发送的方式 传统方式 get/post -->
+   <form action="./reg.php" method="post">
+    <label for="username">用户名</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">密码</label>
+    <input type="password" id="password" name="password"><br>
+    <label for="email">邮箱</label>
+    <input type="text" id="email" name="email"><br>
+    <label for="phone">手机</label>
+    <input type="text" id="phone" name="phone"><br>
+    <label for="address">地址</label>
+    <input type="text" id="address" name="address"><br>
+    <label for="sex1">男</label>
+    <input type="radio" id="sex1" name="sex" value="1">
+    <label for="sex0">女</label>
+    <input type="radio" id="sex0" name="sex" value="0"><br>
+    <input type="submit">
+   </form>
+</body>
+</html>
