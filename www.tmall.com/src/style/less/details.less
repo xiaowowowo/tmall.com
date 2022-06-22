@@ -1,3 +1,19 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+
 #top-img {
   background-color: #A68CF1;
 }
@@ -225,7 +241,7 @@
         padding: 10px 0;
         background-color: white;
         display: none;
-
+        z-index: 2;
         .left {
           color: #8b8b8b;
           width: 160px;
@@ -303,7 +319,10 @@
 #nav-center {
   border-bottom: 1px solid #999;
   padding-bottom: 3px;
-  position:sticky;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index:1;
   #wrapper {
     display: flex;
     justify-content: space-between;
@@ -417,6 +436,7 @@
         right: 5;
         background-color: pink;
         z-index: 2;
+
         >div {
           display: flex;
           justify-content: space-between;
@@ -448,8 +468,14 @@
       img {
         width: 420px;
         height: 420px;
+        display: none;
+      }
+
+      .display-img {
+        display: block;
       }
     }
+
 
     .img2 {
       display: flex;
@@ -579,7 +605,10 @@
     }
 
     .box6 {
-      .right {
+
+      .right1,
+      .right2,
+      .right3 {
         >span {
           display: inline-block;
           margin: 0 4px 4px 0;
@@ -598,6 +627,10 @@
             color: #000;
             text-decoration: none;
           }
+        }
+
+        .red {
+          border: 2px solid #FF0036;
         }
 
       }
@@ -706,18 +739,65 @@
     }
 
     .product {
-
       // width: 788px;
       // margin: 0 auto;
-      .lunbo {
-        height: 305px;
-        overflow: hidden;
-        margin-bottom: 60px;
+     
 
-        img {
-          width: 788px;
-        }
+      .swiper {
+        width: 100%;
+        height: 100%;
       }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #007aff;
+      }
+      // .lunbo {
+      //   height: 305px;
+      //   overflow: hidden;
+      //   margin-bottom: 60px;
+
+      //   img {
+      //     width: 788px;
+      //   }
+      // }
     }
 
     .evaluate {
@@ -1270,16 +1350,21 @@
 
           }
         }
+
+        .box2 {
+          border: none;
+        }
       }
     }
 
 
   }
 
- 
+
 }
- //footer-w
- #footer-w {
+
+//footer-w
+#footer-w {
   background-color: white;
   overflow: hidden;
 
@@ -1347,6 +1432,7 @@
     }
   }
 }
+
 //footer-b
 #footer-b {
   width: 100%;

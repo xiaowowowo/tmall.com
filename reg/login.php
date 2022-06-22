@@ -17,15 +17,15 @@
  
  // query语句用于执行数据库（sql）语句
  // 执行查询 获得一个结果集（对象）
-//  $res = $conn->query($select);  
+ $res = $conn->query($select);  
 // //  var_dump($res);
 
 //  // num_rows  行数  判断有没有查到属性
-//  if($res->num_rows>0){
-//   echo '<script>alert("登录成功");</script>';
-//   echo '<script>location.href="https://www.rootbk.cn";</script>';
-//  }else{
-//   echo '<script>alert("登录失败");</script>';
-//   echo '<script>location.href="./reg.html";</script>';
-//  }
+ if($res->num_rows>0){
+  echo '<script>alert("登录成功");</script>';
+  echo '<script>location.href="https://www.rootbk.cn";</script>';
+ }else{
+  echo '<script>alert("登录失败");</script>';
+  echo '<script>location.href="./reg.html";</script>';
+ }
 // ?>
