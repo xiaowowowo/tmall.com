@@ -262,12 +262,12 @@
 #main > #wrapper #main3 .bottom {
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 #main > #wrapper #main3 .bottom .left-nav {
   color: #666;
   margin-top: 12px;
   width: 212px;
-  float: left;
   overflow: hidden;
 }
 #main > #wrapper #main3 .bottom .left-nav > div {
@@ -291,7 +291,6 @@
   margin-left: 23px;
   width: 520px;
   overflow: hidden;
-  float: left;
 }
 #main > #wrapper #main3 .bottom .middle .middle-1 {
   width: 520px;
@@ -312,9 +311,13 @@
   border-radius: 12px;
   display: block;
   position: relative;
-  background-color: aqua;
+}
+#main > #wrapper #main3 .bottom .middle .middle-2 .swiper-wrapper {
+  width: 520px;
+  height: 206px;
+}
+#main > #wrapper #main3 .bottom .middle .middle-2 .swiper-wrapper .swiper-slide {
   display: flex;
-  overflow: hidden;
 }
 #main > #wrapper #main3 .bottom .middle .middle-2 .odd {
   width: 256px;
@@ -330,7 +333,6 @@
 }
 #main > #wrapper #main3 .bottom .right {
   margin: 14px 0 0 15px;
-  float: left;
   overflow: hidden;
   width: 384px;
   height: 508px;

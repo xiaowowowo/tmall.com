@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="./style/css/reset.css">
   <link rel="stylesheet" href="./style/css/index.css">
   <link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap.min.css">
-  <script src="./js/index.js" type="module"></script>
+  <link rel="stylesheet" href="./style/css/swiper-bundle.min.css">
+  <script src="./js/index-xr.js" type="module"></script>
 </head>
 
 <body>
-  
+
   <div id="top">
     <div id="top-nav">
       <div class="top-left">
@@ -264,28 +265,56 @@
             </div>
           </div>
           <div class="middle">
-            <div class="middle-1">
-              <a href=""><img src="./img/轮播1-1.jpg_.webp" alt=""></a>
-
-              <a href=""><img src="./img/轮播1-2.jpg_.webp" alt=""></a>
-
-              <a href=""> <img src="./img/轮播1-3.jpg_.webp" alt=""></a>
-
-              <a href=""><img src="./img/轮播1-4.jpg" alt=""></a>
-
-              <a href=""><img src="./img/轮播1-5.jpg" alt=""></a>
-
+            <!-- 轮播图 -->
+            <div class="swiper mySwiper middle-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href=""><img src="./img/轮播1-1.jpg_.webp" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="./img/轮播1-2.jpg_.webp" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""> <img src="./img/轮播1-3.jpg_.webp" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="./img/轮播1-4.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="./img/轮播1-5.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="middle-2">
-              <a href=""><img class="odd" src="./img/轮播2-1.jpg" alt=""></a>
-              <a href=""> <img class="even" src="./img/轮播2-2.jpg" alt=""></a>
-              <a href=""> <img class="odd" src="./img/轮播2-3.jpg" alt=""></a>
-              <a href=""><img class="even" src="./img/轮播2-4.jpg" alt=""></a>
-              <a href=""> <img class="odd" src="./img/轮播2-5.jpg" alt=""></a>
-              <a href=""><img class="even" src="./img/轮播2-6.jpg" alt=""></a>
-              <a href=""><img class="odd" src="./img/轮播2-7.jpg" alt=""></a>
-              <a href=""><img class="even" src="./img/轮播2-8.jpg_.webp" alt=""></a>
 
+            <div class="swiper mySwiper middle-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href=""><img class="odd" src="./img/轮播2-1.jpg" alt=""></a>
+                  <a href=""> <img class="even" src="./img/轮播2-2.jpg" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href=""> <img class="odd" src="./img/轮播2-3.jpg" alt=""></a>
+                  <a href=""><img class="even" src="./img/轮播2-4.jpg" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href=""> <img class="odd" src="./img/轮播2-5.jpg" alt=""></a>
+                  <a href=""><img class="even" src="./img/轮播2-6.jpg" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href=""><img class="odd" src="./img/轮播2-7.jpg" alt=""></a>
+                  <a href=""><img class="even" src="./img/轮播2-8.jpg_.webp" alt=""></a>
+                </div>
+
+               
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
           <div class="right">
@@ -353,17 +382,17 @@
           <img src="./img/title-1.jpg_.webp" alt="">
         </div>
         <div class="big-box b-box">
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-1.jpg_.webp" alt="">
               <div class="text">JMsolution 肌司研 韩国JM深水炸弹急救补水保湿面膜*3盒</div>
               <div class="money">￥128</div>
             </a></div>
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-2.jpg_.webp" alt="">
               <div class="text">比比赞蛋黄酥雪媚娘12枚600g营养早餐代餐休闲零食品网红小吃糕点</div>
               <div class="money">￥29.9</div>
             </a></div>
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-5.jpg_.webp" alt="">
               <div class="text">高洁丝夜用放肆睡420mm×9片丝薄棉柔超长款防侧漏卫生巾姨妈巾</div>
               <div class="money">￥13.9</div>
@@ -373,23 +402,23 @@
               <div class="text">超威驱蚊电蚊香液无香无味5瓶1器285晚家庭家用灭蚊插电蚊香</div>
               <div class="money">￥39.9</div>
             </a></div>
-          <div  class="margin0"><a href="">
+          <div class="margin0"><a href="">
               <img src="./img/shop-4.jpg_.webp" alt="">
               <div class="text">世喜安抚奶嘴超软婴儿仿母乳宝宝睡觉哄娃神器防胀气2只新生</div>
               <div class="money">￥49</div>
             </a></div>
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-6.jpg_.webp" alt="">
               <div class="text">汰渍洗衣皂肥皂香皂三重功效柠檬清香无磷去污渍净白404g×1套</div>
               <div class="money">￥6.9</div>
             </a></div>
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-7.jpg_.webp" alt="">
               <div class="text">云南白药创可贴防水创口贴100片止血防水透气伤口贴女少女可爱</div>
               <div class="money">￥9.9</div>
             </a></div>
 
-          <div ><a href="">
+          <div><a href="">
               <img src="./img/shop-8.jpg_.webp" alt="">
               <div class="text">心相印4层无芯卷纸优选75克10卷提装纸巾家用卫生纸（新旧随机发</div>
               <div class="money">￥12.9</div>
@@ -708,10 +737,31 @@
         </div>
       </div>
     </div>
+
   </div>
 
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      loop: true, // 循环模式选项
+      // 自动切换
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
 
-
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 
 </html>

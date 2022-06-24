@@ -2,7 +2,7 @@ import $ from './lib/jquery.esm.js';
 
 $.ajax({
   type: "get",
-  url: "../interface/getitems.php",
+  url: "../interface/getitems-index.php",
   dataType: "json"
 }).then(res => {
   // console.log(res)
@@ -21,7 +21,7 @@ $.ajax({
     //   </a>
     // </li>`;
     // ../details.html?${el.id}&${getTime()}
-    template += ` <div><a href="./details.html?${el.id}&d=${Date.now()}">
+    template += ` <div><a href="./details.html?id=${el.id}&d=${Date.now()}">
          <img src="./${pic[0].src}" >
          <div class="text">${el.title}</div>
          <div class="money">￥${el.price}</div>

@@ -252,6 +252,7 @@
   font-size: 12px;
   overflow: hidden;
   margin: 20px 0 10px 0;
+  display: none;
 }
 #main #wrapper #shopcar .nav a:hover {
   color: red;
@@ -268,12 +269,248 @@
   background: url(../../img/shop-car-1.png) no-repeat 40px 86px;
   font-size: 12px;
   margin-bottom: 180px;
+  display: none;
 }
 #main #wrapper #shopcar .car a {
   font-size: 12px;
 }
 #main #wrapper #shopcar .car a:hover {
   color: red;
+}
+#main #wrapper #shopcar .nav2 {
+  color: #3c3c3c;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c1bdbd;
+}
+#main #wrapper #shopcar .nav2 .left {
+  display: flex;
+}
+#main #wrapper #shopcar .nav2 .left > div {
+  height: 16px;
+  text-align: center;
+  height: 18px;
+  border-right: 1px solid #c1bdbd;
+  cursor: pointer;
+}
+#main #wrapper #shopcar .nav2 .left > div:hover {
+  border-bottom: 1px solid #f40;
+}
+#main #wrapper #shopcar .nav2 .left > div a {
+  color: #3c3c3c;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  height: 16px;
+  display: inline-block;
+}
+#main #wrapper #shopcar .nav2 .left > div a span {
+  display: inline-block;
+  margin-left: 5px;
+}
+#main #wrapper #shopcar .nav2 .left > div a .red {
+  color: #f40;
+  font-size: 14px;
+  margin: 0 30px 0 5px;
+  font-weight: 400;
+}
+#main #wrapper #shopcar .nav2 .right {
+  line-height: 25px;
+  font-size: 12px;
+}
+#main #wrapper #shopcar .nav2 .right .red {
+  color: #f40;
+}
+#main #wrapper #shopcar .nav2 .right > a {
+  display: inline-block;
+  background: #aaa;
+  color: #fff;
+  cursor: not-allowed;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+}
+#main #wrapper #shopcar .select {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+}
+#main #wrapper #shopcar .select .select1 {
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+}
+#main #wrapper #shopcar .select .select1 input {
+  width: 15px;
+  height: 15px;
+  border: #a4a4a4 1px solid;
+  margin-left: 15px;
+}
+#main #wrapper #shopcar .select .box1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 80px;
+}
+#main #wrapper #shopcar .select .box2 {
+  height: 50px;
+  line-height: 50px;
+  width: 172px;
+  padding-left: 10px;
+}
+#main #wrapper #shopcar .select .box3 {
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  padding-left: 10px;
+}
+#main #wrapper #shopcar .select .box4 {
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  padding-left: 10px;
+}
+#main #wrapper #shopcar .select .box5 {
+  height: 50px;
+  line-height: 50px;
+  width: 105px;
+}
+#main #wrapper #shopcar .select .box6 {
+  height: 50px;
+  line-height: 50px;
+  width: 84px;
+}
+#main #wrapper #shopcar .buy {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  background-color: #f2f2c8;
+}
+#main #wrapper #shopcar .buy .top {
+  height: 40px;
+  line-height: 24px;
+  padding-top: 9px;
+  border-bottom: 1px solid #b7b5b5;
+  padding-left: 45px;
+  font-size: 12px;
+}
+#main #wrapper #shopcar .buy .top span {
+  height: 22px;
+  line-height: 22px;
+  color: #6c6c6c;
+  margin-right: 15px;
+  padding: 3px 8px;
+  background-color: #e7e7e7;
+}
+#main #wrapper #shopcar .buy .center {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#main #wrapper #shopcar .buy .center .center1 {
+  display: flex;
+}
+#main #wrapper #shopcar .buy .center .center1 .input {
+  height: 80px;
+  line-height: 80px;
+}
+#main #wrapper #shopcar .buy .center .center1 .input input {
+  width: 15px;
+  height: 15px;
+  border: #a4a4a4 1px solid;
+  margin-left: 15px;
+}
+#main #wrapper #shopcar .buy .center .center1 .img {
+  display: flex;
+}
+#main #wrapper #shopcar .buy .center .center1 .img img {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+#main #wrapper #shopcar .buy .center .center1 .img span {
+  white-space: wrap;
+  width: 126px;
+}
+#main #wrapper #shopcar .buy .center .center1 .img span a {
+  color: #3c3c3c;
+}
+#main #wrapper #shopcar .buy .center .box1 textarea {
+  height: 80px;
+  width: 150px;
+  background-color: #f2f2c8;
+}
+#main #wrapper #shopcar .buy .center .box1 textarea:hover {
+  background-color: white;
+  border: 1px #aaa dashed;
+}
+#main #wrapper #shopcar .buy .center .box3 {
+  color: #f40;
+  width: 120px;
+  padding-left: 10px;
+}
+#main #wrapper #shopcar .buy .center .box4 {
+  width: 120px;
+  padding-left: 10px;
+}
+#main #wrapper #shopcar .buy .center .box5 {
+  width: 105px;
+}
+#main #wrapper #shopcar .buy .center .box6 {
+  width: 84px;
+}
+#main #wrapper #shopcar .bottom {
+  color: #3c3c3c;
+  height: 50px;
+  line-height: 50px;
+  background-color: #e5e5e5;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#main #wrapper #shopcar .bottom .left {
+  display: flex;
+}
+#main #wrapper #shopcar .bottom .left .input input {
+  width: 15px;
+  height: 15px;
+  border: #a4a4a4 1px solid;
+  margin-left: 15px;
+}
+#main #wrapper #shopcar .bottom .left > a {
+  color: #3c3c3c;
+  margin-left: 25px;
+}
+#main #wrapper #shopcar .bottom .left > a:hover {
+  color: #f40;
+}
+#main #wrapper #shopcar .bottom .right {
+  display: flex;
+}
+#main #wrapper #shopcar .bottom .right > div {
+  margin: 0 10px;
+  height: 50px;
+  line-height: 50px;
+}
+#main #wrapper #shopcar .bottom .right .red {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0 3px;
+  color: #f40;
+}
+#main #wrapper #shopcar .bottom .right .box5 {
+  width: 80px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  background-color: #f40;
+  margin-right: 0;
+}
+#main #wrapper #shopcar .bottom .right .box5 a {
+  color: white;
+  font-size: 14px;
 }
 #main #wrapper #shopcar .add {
   margin-bottom: 50px;

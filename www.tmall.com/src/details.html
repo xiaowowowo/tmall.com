@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style/css/swiper-bundle.min.css">
   <script src="./js/details.js"></script>
-  <script src="./js/details1.js" type="module"></script>
+  <script src="./js/details-xr.js" type="module"></script>
    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
 
 </head>
@@ -183,7 +183,7 @@
         </div>
       </div>
       <div class="right">
-        <h4>
+        <h4 class="main1-h4">
           汰渍洗衣液6kg全效洁净持久留香整箱批家用宝洁除菌实惠装正品
         </h4>
         <div class="box1">
@@ -192,7 +192,7 @@
         </div>
         <div class="box2">
           <p class="p1">618狂欢</p>
-          <p class="p2">￥99.80</p>
+          <span class="p2">￥</span><p class="p2 price">99.80</p>
           <p class="p3">聚划算</p>
         </div>
         <div class="box3">
@@ -211,7 +211,7 @@
         <div class="box4">
           <div class="left">重量</div>
           <div class="right">
-            <span><b> 7.05 </b>&nbsp;&nbsp;kg</span>
+            <span><b class=" weight"> 7.05 </b>&nbsp;&nbsp;kg</span>
           </div>
         </div>
         <div class="box5">
@@ -227,7 +227,8 @@
           <div class="left">购买规则</div>
           <div class="right1">
             <span class="red"><a href="javascript:void(0)"> 1件</a></span> &nbsp;&nbsp;
-            <span><a href="javascript:void(0)">2件</a> </span>
+            <span><a href="javascript:void(0)">2件</a> </span>  &nbsp;&nbsp;
+            <span><a href="javascript:void(0)">3件</a> </span>
           </div>
         </div>
         <div class="box6">
@@ -239,22 +240,20 @@
         <div class="box6">
           <div class="left">净含量</div>
           <div class="right3">
-            <span class="red"><a href="javascript:void(0)">6kg</a></span>
-            <span><a href="javascript:void(0)">12kg</a></span>
-            <span><a href="javascript:void(0)">18kg</a></span>
+            <span class="red num"><a href="javascript:void(0)">6kg</a></span>
           </div>
         </div>
         <div class="box7">
           <div class="left">数量</div>
           <div class="right">
-            <input type="text">
+            <input type="number" id="num" value="1" min="1" max="99">
             <span>有货（每人限购20件）</span>
           </div>
         </div>
         <div class="box8">
           <div class="left"> &nbsp;</div>
           <div class="right">
-            <span><a href="">加入超市购物车</a></span>
+            <input type="button" id="btn" value="加入购物车">
           </div>
         </div>
         <div class="box9">
@@ -311,15 +310,8 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <!-- <div class="lunbo">
-            <img src="./img/de-main2-1.png" alt="">
-            <img src="./img/de-main2-2.jpg" alt="">
-            <img src="./img/de-main2-3.jpg" alt="">
-            <img src="./img/de-main2-4.jpg" alt="">
-            <img src="./img/de-main2-5.jpg" alt="">
-            <img src="./img/de-main2-6.jpg" alt="">
-          </div> -->
-          <div class="img">
+          
+          <div class="img product-img">
             <img src="./img/de-main2-7.jpg" alt="">
             <img src="./img/de-main2-8.jpg" alt="">
             <img src="./img/de-main2-9.jpg" alt="">
@@ -904,6 +896,7 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        // direction: 'vertical',
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

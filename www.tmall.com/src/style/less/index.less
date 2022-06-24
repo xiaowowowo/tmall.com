@@ -329,13 +329,13 @@
         width: 100%;
         overflow: hidden;
         // position: relative;
-
+        display: flex;
         .left-nav {
           color: #666;
           // position: absolute;
           margin-top: 12px;
           width: 212px;
-          float: left;
+          // float: left;
           overflow: hidden;
 
           >div {
@@ -365,7 +365,7 @@
           margin-left: 23px;
           width: 520px;
           overflow: hidden;
-          float: left;
+          // float: left;
 
           .middle-1 {
             width: 520px;
@@ -389,14 +389,16 @@
             border-radius: 12px;
             display: block;
             position: relative;
-            background-color: aqua;
-            display: flex;
             // justify-content: space-between;
-            overflow: hidden;
+            // overflow: hidden;
 
-            //  img{
-            //   margin: 0 1.7px;
-            //  }
+            .swiper-wrapper{
+              width: 520px;
+              height: 206px;
+              .swiper-slide{
+                display: flex;
+              }
+            }
             .odd {
               width: 256px;
               height: 200px;
@@ -416,7 +418,7 @@
 
         .right {
           margin: 14px 0 0 15px;
-          float: left;
+          // float: left;
           overflow: hidden;
           width: 384px;
           height: 508px;

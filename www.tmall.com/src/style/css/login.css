@@ -48,6 +48,20 @@
   right: 60px;
   width: 350px;
 }
+#center #wrapper .login .change {
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  line-height: 50px;
+  color: #f40;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px;
+}
+#center #wrapper .login .change i {
+  font-size: 45px;
+}
 #center #wrapper .login a {
   text-decoration: none;
 }
@@ -59,6 +73,10 @@
   background-color: hsla(0, 0%, 100%, 0.9);
   margin: 0 auto;
   border-bottom: 1px solid black;
+  position: relative;
+}
+#center #wrapper .login .disappear {
+  display: none;
 }
 #center #wrapper .login .login-1 ul {
   display: flex;
@@ -189,7 +207,6 @@
 }
 #center #wrapper .login .login-2 {
   background-color: white;
-  display: none;
 }
 #center #wrapper .login .login-2 .box-1 {
   margin-bottom: 40px;
@@ -275,7 +292,7 @@
 }
 #footer #wrapper .footer-bd .p1 span,
 #footer #wrapper .footer-bd .p2 span {
-  margin: 0 8px ;
+  margin: 0 8px;
 }
 #footer #wrapper .footer-bd .p1 span a,
 #footer #wrapper .footer-bd .p2 span a {

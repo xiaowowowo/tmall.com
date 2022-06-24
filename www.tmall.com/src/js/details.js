@@ -6,8 +6,7 @@ window.onload = function () {
   let img1 = document.querySelectorAll('#main1>.left >.img1>img')
   let img2 = document.querySelectorAll('#main1>.left >.img2>img')
   let span1 = document.querySelectorAll('#main1>.right >.box6>.right1>span')
-  let span2 = document.querySelectorAll('#main1>.right >.box6>.right2>span')
-  let span3 = document.querySelectorAll('#main1>.right >.box6>.right3>span')
+ 
   // console.log(span1)
 
   // 支付方式--点击出现，再点击消失效果
@@ -44,14 +43,6 @@ window.onload = function () {
     }
   }
  
-  for (let i = 0; i < span3.length; i++) {
-    span3[i].onclick = function () {
-      for (let j = 0; j < span3.length; j++) {
-        span3[j].classList.remove('red');
-      }
-      span3[i].classList.add('red')
-    }
-  }
   // 使用报告--选项卡效果
   for (let i = 0; i < gradeLi.length; i++) {
 
