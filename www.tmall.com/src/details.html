@@ -253,7 +253,9 @@
         <div class="box8">
           <div class="left"> &nbsp;</div>
           <div class="right">
-            <input type="button" id="btn" value="加入购物车">
+            <a href="./shopping.html">
+              <input type="button" id="btn" value="加入购物车">
+            </a>
           </div>
         </div>
         <div class="box9">
@@ -897,6 +899,10 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         // direction: 'vertical',
+        autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

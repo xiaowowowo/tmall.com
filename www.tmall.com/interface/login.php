@@ -1,5 +1,5 @@
 <?php
- // 登录功能
+// 登录功能
   // 1. 前端需要向后端发送数据
   // 2. 后端接收前端发送的数据
   // 3. 连接数据库 查询用户名和密码是否正确
@@ -13,7 +13,7 @@
  include('./conn.php'); //连接数据库，相当于link
 
  // 查询不到数据，查询结果为0行，然后输入什么都不成功，跳转到注册页
- $select = "select * from user where username = '$username ' and password = ' $password '" ;
+ $select = "select * from user where username='$username' and password='$password'" ;
  echo $select; // 检验查询语句对不对
  
  // query语句用于执行数据库（sql）语句
@@ -24,9 +24,9 @@
 //  // num_rows  行数  判断有没有查到属性
  if($res->num_rows>0){
   echo '<script>alert("登录成功");</script>';
-  echo '<script>location.href="https://www.rootbk.cn";</script>';
+  echo '<script>location.href="../src/index.html";</script>';
  }else{
   echo '<script>alert("登录失败");</script>';
-  echo '<script>location.href="./reg.html";</script>';
+  echo '<script>location.href="../src/reg.html";</script>';
  }
-// ?>
+?>

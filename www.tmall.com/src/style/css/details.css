@@ -525,7 +525,10 @@
   color: #000;
   margin-right: 10px;
 }
-#main1 > .right .box8 .right input {
+#main1 > .right .box8 .right a {
+  display: block;
+}
+#main1 > .right .box8 .right a input {
   background-color: #ff0036;
   border: 1px solid #ff0036;
   width: 178px;

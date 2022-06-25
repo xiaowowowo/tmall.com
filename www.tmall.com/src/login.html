@@ -50,23 +50,26 @@
           </ul>
 
           <div class="pass-login display">
-            <div class="num">
-              <div class="icon">
-                <span class="glyphicon glyphicon-user"></span>
+            <form action="../interface/login.php" method="post">
+              <div class="num">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <div class="input">
+                  <input type="text" name="username" placeholder=" 账号/邮箱/手机号 ">
+                </div>
               </div>
-              <div class="input">
-                <input type="text" placeholder=" 账号/邮箱/手机号 ">
+              <div class="pass">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                </div>
+                <div class="input">
+                  <input type="password" name="password" placeholder=" 请输入登陆密码">
+                </div>
               </div>
-            </div>
-            <div class="pass">
-              <div class="icon">
-                <span class="glyphicon glyphicon-lock"></span>
-              </div>
-              <div class="input">
-                <input type="password" placeholder=" 请输入登陆密码">
-              </div>
-            </div>
-            <button>登录</button>
+              <input type="submit" value="登录" id="sub">
+            </form>
+
             <div class="other">
               <a href="">
                 <span class="glyphicon glyphicon-eye-open"></span>

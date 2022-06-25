@@ -141,8 +141,8 @@
   height: 40px;
   line-height: 40px;
 }
-#center #wrapper .login .login-1 .pass-login > button,
-#center #wrapper .login .login-1 .note-login > button {
+#center #wrapper .login .login-1 .pass-login #sub,
+#center #wrapper .login .login-1 .note-login #sub {
   width: 300px;
   height: 40px;
   border: none;
