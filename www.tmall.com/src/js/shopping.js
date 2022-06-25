@@ -17,6 +17,9 @@ $.ajax({
 }).then(res => {
   // console.log(res)
   let template1 = '';
+  let template2 = 0 ;
+  let template3 = 0 ;
+  let count =0 ;
   res.forEach((el, i) => {
     let pic = JSON.parse(el.picture);
     // console.log(pic)
@@ -51,10 +54,17 @@ $.ajax({
       </div>
   
     `
-    // let template2 += (el.price * current[0].num).toFixed(2)
-
+    ++count;
+    
+    template2 = template2 + Number(current[0].num) ;
+    template3 = template3 + el.price *Number(current[0].num);
   })
+   
   $('.buy').html(template1);
+  $('#anum1').html(template2);
+  $('#anum2').html(template2);
+  $('#t-price1').html(template3.toFixed(2));
+  $('#t-price2').html(template3.toFixed(2));
   $('.buy .remove').on('click', function () {
     let res = shop.filter(el => el.id != $(this).attr('data-id'));
     //排除被点击的元素，剩下内容重新写回cookie
@@ -92,15 +102,15 @@ $(function () {
 
   }
 
+
   // 全选框点击效果
   let checkAll1 = $('#checkbox1')
   let checkAll2 = $('#checkbox2')
   let shopcar = $('#main>#wrapper>#shopcar')
   let item = $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox')
-  console.log(item)
+  // console.log(item)
 
-  // 使用 checkAll2 '#checkbox1'
-  //      item  $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox')  效果不一样，有的不能使用变量
+  // 使用 checkAll2或者'#checkbox1', item 或者$('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox')  效果不一样，有的不能使用变量
 
   // 全选时，商品全部勾选效果
   shopcar.on('click', '#checkbox1', function () {
