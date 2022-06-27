@@ -17,9 +17,6 @@ $.ajax({
 }).then(res => {
   // console.log(res)
   let template1 = '';
-  let template2 = 0 ;
-  let template3 = 0 ;
-  let count =0 ;
   res.forEach((el, i) => {
     let pic = JSON.parse(el.picture);
     // console.log(pic)
@@ -44,7 +41,7 @@ $.ajax({
             <div class="box1">
              <textarea name="" id="" cols="15" rows="10">口味:${el.title}</textarea>
             </div>
-            <div class="box3" id="price">${el.price}</div>
+            <div class="box3" id="price">${(el.price * current[0].num).toFixed(2)}</div>
             <div class="box4"  id="number">${current[0].num}</div>
             <div class="box5">${el.num}</div>
             <div class="box6">
@@ -54,23 +51,18 @@ $.ajax({
       </div>
   
     `
-    ++count;
     
-    template2 = template2 + Number(current[0].num) ;
-    template3 = template3 + el.price *Number(current[0].num);
   })
-   
+
+
+
   $('.buy').html(template1);
-  $('#anum1').html(template2);
-  $('#anum2').html(template2);
-  $('#t-price1').html(template3.toFixed(2));
-  $('#t-price2').html(template3.toFixed(2));
   $('.buy .remove').on('click', function () {
     let res = shop.filter(el => el.id != $(this).attr('data-id'));
     //排除被点击的元素，剩下内容重新写回cookie
     cookie.set('shop', JSON.stringify(res));
     location.reload(); // 刷新页面
-    
+
     $('#t-price').html();
     $('.buy').html(template1);
   });
@@ -85,7 +77,7 @@ $(function () {
   // 底部添加更多，选项卡切换
   let li = document.querySelectorAll('#main>#wrapper>#shopcar>.add>ul>li');
   let box = document.querySelectorAll('#main>#wrapper>#shopcar>.add>div');
- 
+
   for (let i = 0; i < li.length; i++) {
     //遍历li,为每一个li添加点击事件
     li[i].onmouseover = function () {
@@ -107,21 +99,20 @@ $(function () {
   let checkAll1 = $('#checkbox1')
   let checkAll2 = $('#checkbox2')
   let shopcar = $('#main>#wrapper>#shopcar')
-  let item = $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox')
+  let item = $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs')
   // console.log(item)
 
   // 使用 checkAll2或者'#checkbox1', item 或者$('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox')  效果不一样，有的不能使用变量
 
   // 全选时，商品全部勾选效果
   shopcar.on('click', '#checkbox1', function () {
-    console.log(132)
-    console.log(item.prop('checked'))
+  
     $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox').prop('checked', $(this).prop('checked'));
     checkAll2.prop('checked', $(this).prop('checked'));
   });
 
   shopcar.on('click', '#checkbox2', function () {
-    $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox').prop('checked', $(this).prop('checked'));
+    $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs').prop('checked', $(this).prop('checked'));
     checkAll1.prop('checked', $(this).prop('checked'));
   });
 
@@ -130,12 +121,34 @@ $(function () {
     // 复选框的值 = allcheck 的值
     $('#checkbox1').prop('checked', isAllCheck());
     $('#checkbox2').prop('checked', isAllCheck());
+    getTotal();
   });
-
+  
   // 设置商品全部勾选的判断函数，函数为所有复选框的值，全选时为true
   function isAllCheck() {
     // 类数组转数组
-    let elm = Array.from($('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox'));
+    let elm = Array.from($('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs'));
     return elm.every(el => $(el).prop('checked'));
+  }
+
+
+
+  //创建函数，商品数量变化，商品总价也变化
+  function getTotal() {
+    let num = 0;
+    let sum = 0;
+    $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checked').each((i, el) => {
+      // 数量
+      sum += parseInt($(el).parents('.center1').siblings('#number').text());
+
+      num += parseFloat($(el).parents('.center1').siblings('#price').text());
+      console.log(sum);
+      console.log(num);
+    })
+    num = '￥' + num.toFixed(2);
+    $('#anum1').html(sum);
+    $('#anum2').html(sum);
+    $('#t-price1').html(num);
+    $('#t-price2').html(num);
   }
 })
