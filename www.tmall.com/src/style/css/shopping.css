@@ -440,6 +440,7 @@
   height: 80px;
   width: 150px;
   background-color: #f2f2c8;
+  resize: none;
 }
 #main #wrapper #shopcar .buy .center .box1 textarea:hover {
   background-color: white;

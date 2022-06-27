@@ -109,15 +109,17 @@ $(function () {
   
     $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs:checkbox').prop('checked', $(this).prop('checked'));
     checkAll2.prop('checked', $(this).prop('checked'));
+    getTotal();
   });
 
   shopcar.on('click', '#checkbox2', function () {
     $('#main>#wrapper>#shopcar>.buy>.center>.center1>.input>#checkboxs').prop('checked', $(this).prop('checked'));
     checkAll1.prop('checked', $(this).prop('checked'));
+    getTotal();
   });
 
   // 商品全部勾选时，全选框自动勾选
-  shopcar.on('click', '#checkboxs', function () {
+  shopcar.on('change', '#checkboxs', function () {
     // 复选框的值 = allcheck 的值
     $('#checkbox1').prop('checked', isAllCheck());
     $('#checkbox2').prop('checked', isAllCheck());
@@ -142,8 +144,8 @@ $(function () {
       sum += parseInt($(el).parents('.center1').siblings('#number').text());
 
       num += parseFloat($(el).parents('.center1').siblings('#price').text());
-      console.log(sum);
-      console.log(num);
+      // console.log(sum);
+      // console.log(num);
     })
     num = '￥' + num.toFixed(2);
     $('#anum1').html(sum);
